@@ -1,0 +1,12 @@
+<div class="container">
+  <div class="card-container" *ngFor="let platform of platformsData">
+    <div class="card">
+      <div class="card-body">
+        <img class="card-img-top" src='./../../assets/PlatformImage/{{platform.name}}.png' alt="Card image cap">
+        <br>
+        <a href='{{platform.link}}' target="_blank" class="btn btn-primary" >{{platform.name}}</a>
+        <a target="_blank" class="btn btn-primary" (click)="onClick(platform.name, platform.link)" >Contests</a>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,32 @@
+<div class="pageHead">
+    <div class="card">
+        <div class="card-body">
+            <img class="card-img-top" src='./../../assets/PlatformImage/{{platformName}}.png' alt="Card image cap">
+        </div>
+    </div>
+    <a href='{{platformLink}}' target="_blank" class="btn btn-primary link" >{{platformName}}</a>
+    <br>    
+</div>
+<br>
+<div id="PresentContests" *ngIf="platformDataAvailable">
+    <table class="table table-striped table-borderless table-hover">
+        <thead class="thead-dark">
+            <tr>
+                <th scope="col">#</th>
+                <th scope="col">Name</th>
+                <th scope="col">Start Time</th>
+                <th scope="col">End Time</th>
+                <th scope="col">URL</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let platformData of platformViewDataArray; index as i;">
+                <th scope="row">{{i+1}}</th>
+                <td>{{platformData.name}}</td>
+                <td>{{platformData.start_time}}</td>
+                <td>{{platformData.end_time}}}</td>
+                <td><a href='{{platformData.url}}'> Contest Link </a></td>
+            </tr>
+        </tbody>
+    </table>
+</div>

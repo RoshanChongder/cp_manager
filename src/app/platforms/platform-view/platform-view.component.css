@@ -1,0 +1,17 @@
+#PresentContests {
+    padding: 5px;
+    margin: 10px;
+}
+
+.card-body , .link  {
+    max-height: 200px;
+    max-width: 200px;
+    position: relative;
+    margin: 10px;
+    pad: 10px;
+    border: 1px solid black;
+}
+
+.pageHead {
+    float: left;
+}

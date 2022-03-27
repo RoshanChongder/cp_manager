@@ -1,0 +1,36 @@
+.card {
+    margin: 15px;
+    background-color: rgba(247, 216, 216, 0.6);
+    border: 1px solid black;
+    position: relative;
+    align-content: center;
+}
+
+.card-img-top {
+    margin-bottom: 25px;
+}
+
+.card-container {
+    width: fit-content;
+    float: left;
+}
+
+.card-img-top {
+    width: 192px;
+    height: 192px;
+    border: 1px solid black;
+}
+
+.card :hover {
+    background-color: rgba(24, 16, 16, 0.6);
+}
+
+.container {
+    /* padding: 20px; */
+    background-color: rgb(27, 25, 25)
+}
+
+.btn {
+    margin: 4px;
+    font-size: 10px;
+}
