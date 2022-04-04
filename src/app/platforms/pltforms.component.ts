@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { PlatformService, PlatformInfo } from './service/platform-service.service';
+import { PlatformService, PlatformInfo } from './service/platform-service';
 import { Router } from '@angular/router';
 
 export type rawPlatformData = [string, string, string];

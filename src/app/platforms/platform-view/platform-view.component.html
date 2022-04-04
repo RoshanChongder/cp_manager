@@ -14,8 +14,12 @@
             <tr>
                 <th scope="col">#</th>
                 <th scope="col">Name</th>
+                <th scope="col">Start Date</th>
                 <th scope="col">Start Time</th>
+                <th scope="col">Start Time Zone</th>
+                <th scope="col">End Date</th>
                 <th scope="col">End Time</th>
+                <th scope="col">End Time Zone</th>
                 <th scope="col">URL</th>
             </tr>
         </thead>
@@ -23,8 +27,12 @@
             <tr *ngFor="let platformData of platformViewDataArray; index as i;">
                 <th scope="row">{{i+1}}</th>
                 <td>{{platformData.name}}</td>
-                <td>{{platformData.start_time}}</td>
-                <td>{{platformData.end_time}}}</td>
+                <td>{{platformData.time.start_date}}</td>
+                <td>{{platformData.time.start_time}}</td>
+                <td>{{platformData.time.start_time_zone}}</td>
+                <td>{{platformData.time.end_date}}</td>
+                <td>{{platformData.time.end_time}}</td>
+                <td>{{platformData.time.end_time_zone}}</td>
                 <td><a href='{{platformData.url}}'> Contest Link </a></td>
             </tr>
         </tbody>
